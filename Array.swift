@@ -46,10 +46,10 @@ func calculateMode(_ numsUnsorted: [Int]) -> [Int] {
     // create a mode list
     var mode = [Int]()
     // for loop to see if num repeats
-    for i in 0..<nums.count {
-        if i == nums.count - 1 {
-            if nums[i] == nums[i - 1] {
-                numRep = nums[i]
+    for counter in 0..<nums.count {
+        if counter == nums.count - 1 {
+            if nums[counter] == nums[counter - 1] {
+                numRep = nums[counter]
                 if timesRep > maxNumRep {
                     mode.removeAll()
                     mode.append(numRep)
@@ -60,8 +60,8 @@ func calculateMode(_ numsUnsorted: [Int]) -> [Int] {
                 timesRep = 0
             }
         } else {
-            if nums[i] == nums[i + 1] {
-                numRep = nums[i]
+            if nums[counter] == nums[counter + 1] {
+                numRep = nums[counter]
                 timesRep += 1
             } else {
                 if timesRep > maxNumRep {

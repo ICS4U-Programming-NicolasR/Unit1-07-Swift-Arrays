@@ -10,7 +10,7 @@
 import Foundation
 
 // Define the path to the input text file
-let inputFilePath = "Unit1-06-Set.txt"
+let inputFilePath = "Unit1-07-set1.txt"
 
 // Read the dataset from the input text file
 guard let inputData = try? String(contentsOfFile: inputFilePath) else {
